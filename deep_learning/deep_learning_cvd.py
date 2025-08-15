@@ -352,7 +352,7 @@ class CVDDeepLearningPipeline:
         
         return model
     
-    def get_callbacks(self, model_name, patience=10):
+    def get_callbacks(self, model_name, patience=50):
         """Get training callbacks."""
         callbacks = [
             EarlyStopping(
